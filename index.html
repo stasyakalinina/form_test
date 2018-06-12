@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="кг">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Scada:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Заявка на экскурсионный полет на Марс</title>
+</head>
+<body>
+    <div class="container">
+       <h1 class="title">Заявка на экскурсионный полет на Марс</h1>
+        <main class="page-content">
+            <section class="user-info">
+                <h2 class="visually-hidden">Заполнить форму</h2>
+                <form action="" class="user-info__form" id="user-info__form" method="post">
+                    <div class="form__info-section">
+                        <fieldset class="user-info__field">
+                           <legend class="visually-hidden">Ваши данные</legend>
+                           <p class="field__item">
+                               <label for="surname" class="field-item__label">Фамилия</label>
+                               <input type="text" name="surname" id="surname" pattern="^[А-Яа-яЁё]+$" class="input-field" required>
+                            </p>
+                            <p class="field__item">
+                               <input type="checkbox" id="change-surname" class="change-surname"> <label for="change-surname">ранее менялась</label>
+                            </p>
+                            <p class="field__item">
+                               <label for="name" class="field-item__label">Имя</label>
+                               <input type="text" pattern="^[А-Яа-яЁё]+$" name="name" id="name" class="input-field" required>
+                            </p>
+                            <p class="field__item">
+                               <label for="patronymic" class="field-item__label">Отчество</label>
+                               <input type="text" id="patronymic" class="input-field" required>
+                            </p>
+                            <p class="field__item field__item--warning">Если вы не хотите лететь в багажном отсеке, пожалуйста, укажите ваше отчество                        
+                            </p>
+                            <p class="field__item">
+                               <label for="surname-latin" class="field-item__label">Фамилия латиницей</label>
+                               <input type="text" pattern="^[A-za-z]+$" name="surname-latin" id="surname-latin" class="input-field">
+                            </p>
+                            <p class="field__item">
+                               <label for="name-latin" class="field-item__label">Имя латиницей</label>
+                               <input type="text" name="name-latin" id="name-latin" pattern="^[A-za-z]+$"  class="input-field">
+</p>
+                            <div class="field__item">
+                                <label for="birthday" class="field-item__label">Дата рождения</label>
+                                <div class="field-item__select">
+                                    <select id="day" name="day" class="user-info--select">
+                                    <option value="null"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="13">14</option>
+                                    <option value="14">15</option>
+                                    <option value="15">16</option>
+                                    <option value="16">17</option>
+                                    <option value="17">18</option>
+                                    <option value="18">19</option>
+                                    <option value="19">20</option>
+                                    <option value="20">21</option>
+                                    <option value="21">22</option>
+                                    <option value="22">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                    <select id="month" name="month" class="user-info--select">
+                                    <option value="null"></option>
+                                    <option value="1">январь</option>
+                                    <option value="2">февраль</option>
+                                    <option value="3">март</option>
+                                    <option value="4">апрель</option>
+                                    <option value="5">май</option>
+                                    <option value="6">июнь</option>
+                                    <option value="7">июль</option>
+                                    <option value="8">август</option>
+                                    <option value="9">сентябрь</option>
+                                    <option value="10">октябрь</option>
+                                    <option value="11">ноябрь</option>
+                                    <option value="12">декабрь</option>
+                                </select>
+                                    <select id="year" name="year" class="user-info--select">
+                                        <option value="null"></option>
+                                        <option value="1900">1900</option>
+                                        <option value="1901">1901</option>
+                                        <option value="1902">1902</option>
+                                        <option value="1903">1903</option>
+                                        <option value="1904">1904</option>
+                                        <option value="1904">1905</option>
+                                        <option value="1906">1906</option>
+                                        <option value="1907">1907</option>
+                                        <option value="1908">1908</option>
+                                        <option value="1909">1909</option>
+                                        <option value="1910">1910</option>
+                                        <option value="1911">1911</option>
+                                        <option value="1912">1912</option>
+                                        <option value="1913">1913</option>
+                                        <option value="1914">1914</option>
+                                        <option value="1915">1915</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1919">1919</option>
+                                        <option value="1920">1920</option>
+                                        <option value="1921">1921</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1954">1954</option>
+                                        <option value="198">1981</option>
+                                        <option value="198">1982</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="field__item field__item--hidden">Пожалуй ваш возраст препятствует полету на Марс.      
+                            </p>
+                            <div class="field__item">
+                               <label class="field-item__label">Пол</label>
+                                    <div class="field-item__radio">
+                                       <input type="radio" name="sex" id="male" value="мужской" class="input-radio visually-hidden" required>
+                                       <label for="male" class="radio-label radio-label--male radio-checked">мужской</label>
+                                       <input type="radio" name="sex" id="female" value="женский" class="input-radio visually-hidden" required>
+                                       <label for="female" class="radio-label radio-label--female">женский</label>
+                                    </div>   
+                            </div>
+                            <p class="field__item">
+                               <label for="status" class="field-item__label">Семейное положение</label>
+                               <select id="status" name="семейное положение" class="user-info--status">
+                                   <option value=""></option>
+                                   <option value="замужем">в браке</option>
+                                   <option value="в гражданском браке">в гражданском браке</option>
+                                   <option value="разведена">разведена/разведен</option>
+                                   <option value="не замужем">не замужем/холост</option>
+                                   <option value="вдова">вдова/вдовец</option></select>
+                            </p>
+                            <p class="field__item">
+                               <label for="edu" class="field-item__label">Образование</label>
+                               <select name="образование" id="edu" class="user-info--edu" required>
+                                <option></option>
+                                <option value="высшее" class="education__option">высшее</option>
+                                <option value="среднее специальное" class="education-option">среднее специальное</option>
+                                <option value="среднее" class="education-option">среднее</option>
+                                <option value="студент" class="education-option">студентка/студент</option>
+                            </select>
+                            </p>
+                        </fieldset>
+                        <fieldset class="contact-info__field">
+                            <legend class="contact-info__title">Контактная информация</legend>
+                            <p class="field__item">
+                               <label for="phone" class="field-item__label">Моб. телефон</label>
+                               <input type="tel" id="phone" class="input-field input-field--phone" placeholder="+7" pattern="^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$" required>
+                            </p>
+                            <p class="field__item">
+                               <label for="email" class="field-item__label">Электронная почта</label>
+                               <input name="email" type="email" id="email" class="input-field input-field--address" required>
+                            </p>
+                        </fieldset>
+                    </div>
+                   <fieldset class="confirmation__field">
+                        <legend class="visually-hidden">Подтверждение и отправка формы</legend>
+                        <p class="confirmation__item">
+                            <input id="agreement" type="checkbox" required checked>
+                            <label for="agreement" class="confirmation__content">Ставя эту галочку, я подтверждаю, что поставил
+                        её в трезвом уме и трезвой памяти</label>
+                        </p>
+                        <p class="confirmation__item">
+                            <button class="btn" type="submit">Полететь на Марс</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="fact">
+                <h2 class="fact__title">Почему стабильно солнечное затмение</h2>
+                <p class="fact__text">Эффективный диаметр жизненно вызывает случайный эффективный радиус, а время ожидания ответа составило бы 89 миллиардов лет.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

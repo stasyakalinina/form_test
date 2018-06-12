@@ -1,0 +1,270 @@
+body{
+    font-family: 'Scada', 'Helvetica', sans-serif;
+    font-size: 1em;
+    background-color: #ffffff; 
+    line-height: 1.5em;
+    
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.title{
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.page-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.user-info {
+    width: 75%;
+    padding-right: 50px;
+}
+
+.user-info__form{
+    width: 100%;
+ 
+}
+.user-info__field, .contact-info__field, .confirmation__field{
+    border: none; 
+}
+.form__info-section{
+    padding: 20px 130px 35px 25px;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #ebd1d0),to(#fde8e7));
+    background: linear-gradient(to bottom,#ebd1d0 0,#fde8e7 100%);
+    
+}
+.field__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+}
+.field-item__label{
+    width: 180px;
+}
+.user-info__form input[type="text"],
+.user-info__form input[type="tel"],
+.user-info__form input[type="email"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+    height: 25px;
+    display: block;
+    margin-right: 20px;
+    padding: 2px 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-box-shadow: inset 0 1px 2px #717171;
+    box-shadow: inset 0 1px 2px #717171;
+}
+.change-surname{
+    margin-left: 180px;
+    margin-right: 10px;
+}
+.field__item--warning, 
+.field__item--hidden {
+    position: relative;
+    z-index: 1;
+    margin-left: 180px;
+    padding: 10px 10px 13px;
+    background-color: #fdd;
+}
+
+.field__item--warning{
+    -webkit-box-shadow: 0 10px 5px -7px rgba(0, 0, 0, .1);
+            box-shadow: 0 10px 5px -7px rgba(0, 0, 0, .1);
+}
+.field__item--hidden{
+    display: none; 
+    background-color: #feffdc;
+}
+
+.user-info__form select{
+    border-radius: 4px;
+    border: 1px solid #a1a1a1;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #fdfcfd),color-stop(40%, #f3f3f3),color-stop(50%, #efefef),color-stop(50%, #e6e6e6),to(#e7e7e7));
+    background: linear-gradient(to bottom,#fdfcfd 0,#f3f3f3 40%,#efefef 50%,#e6e6e6 50%,#e7e7e7 100%);
+}
+
+.user-info__form select:not(:last-child){
+    margin-right: 8px;
+}
+.field-item__radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.radio-label {
+    display: block;
+    margin: 0;
+    border: 1px solid #8a8989;
+    padding: 5px 10px;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #fdfcfd),color-stop(40%, #f3f3f3),color-stop(50%, #efefef),color-stop(50%, #e6e6e6),to(#e7e7e7));
+    background: linear-gradient(to bottom,#fdfcfd 0,#f3f3f3 40%,#efefef 50%,#e6e6e6 50%,#e7e7e7 100%);
+
+}
+.radio-label--male {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.radio-label--female {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.radio-checked {
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #61605e),to(#a1a1a1));
+    background: linear-gradient(to bottom,#61605e 0,#a1a1a1 100%);
+    color: #fff;
+}
+
+
+.confirmation__field {
+    padding: 30px 150px 35px 25px;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #d8cbd8),to(#a6b1cd));
+    background: linear-gradient(to bottom,#d8cbd8 0,#a6b1cd 100%);
+}
+
+.confirmation__item{
+    margin-left: 180px;
+}
+
+.btn{
+    color: #a1a1a1;
+    padding: 18px 25px;
+    font-size: 30px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #ededed),color-stop(55%, #d9d9d9),color-stop(75%, #dedede),to(#eaeaea));
+    background: linear-gradient(to bottom,#ededed 0,#d9d9d9 55%,#dedede 75%,#eaeaea 100%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .3));
+            filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .3));
+}
+
+.btn:hover{
+    color: #696767;
+    -webkit-filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .6));
+            filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .6));
+    -webkit-transition: all 0.8s easy;
+    
+}
+/**/
+.fact {
+    width: 25%;
+}
+
+.fact__title{
+    font-size: 1.17em;
+    margin-top: 0;
+}
+
+@media screen and (max-width:1160px){
+    .container{
+        width: 90%;
+    }
+    .page-content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .user-info {
+        width: 100%;
+        padding-right: 0;
+    }
+    .fact {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .form__info-section {
+        padding: 35px;
+    }
+}
+@media screen and (max-width:752px) {
+    
+    .field__item {
+        -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		    align-items: flex-start
+    }
+    .input-field{
+        margin-right: 0;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+    }
+    .field-item__label{
+        width:100%;
+		text-align:left;
+		margin-bottom:5px
+    }
+    .field-item__select {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        
+    }
+    .field__item--warning, 
+    .field__item--hidden {
+        margin-left: 0;
+    }
+    .change-surname{
+        margin: 0;
+    
+    }
+    .confirmation__field {
+        padding: 35px;
+    }
+    .confirmation__item {
+        margin-left: 0;
+        text-align: center;
+    }
+   
+}
+
+@media screen and (max-width:435px){
+    .btn{ 
+        padding: 10px 15px;
+        font-size: 25px;
+    }
+}
