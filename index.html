@@ -13,7 +13,7 @@
         <main class="page-content">
             <section class="user-info">
                 <h2 class="visually-hidden">Заполнить форму</h2>
-                <form action="" class="user-info__form" id="user-info__form" method="post">
+                <form action="https://script.google.com/macros/s/AKfycbyalWTdt442fQY9tUlLRT_BygMGjrSH57k0ghi3by1pf9jwARw/exec" class="user-info__form" id="gform" method="post">
                     <div class="form__info-section">
                         <fieldset class="user-info__field">
                            <legend class="visually-hidden">Ваши данные</legend>
@@ -42,7 +42,7 @@
                                <label for="name-latin" class="field-item__label">Имя латиницей</label>
                                <input type="text" name="name-latin" id="name-latin" pattern="^[A-za-z]+$"  class="input-field">
 </p>
-                            <div class="field__item">
+                            <div class="field__item field__item--birthday">
                                 <label for="birthday" class="field-item__label">Дата рождения</label>
                                 <div class="field-item__select">
                                     <select id="day" name="day" class="user-info--select">
@@ -153,20 +153,20 @@
                                     </select>
                                 </div>
                             </div>
-                            <p class="field__item field__item--hidden">Пожалуй ваш возраст препятствует полету на Марс.      
+                            <p class="field__item alert field__item--hidden field__item--acive ">Пожалуй ваш возраст препятствует полету на Марс.      
                             </p>
                             <div class="field__item">
                                <label class="field-item__label">Пол</label>
                                     <div class="field-item__radio">
                                        <input type="radio" name="sex" id="male" value="мужской" class="input-radio visually-hidden" required>
-                                       <label for="male" class="radio-label radio-label--male radio-checked">мужской</label>
+                                       <label for="male" class="radio-label radio-label--male">мужской</label>
                                        <input type="radio" name="sex" id="female" value="женский" class="input-radio visually-hidden" required>
                                        <label for="female" class="radio-label radio-label--female">женский</label>
                                     </div>   
                             </div>
                             <p class="field__item">
                                <label for="status" class="field-item__label">Семейное положение</label>
-                               <select id="status" name="семейное положение" class="user-info--status">
+                               <select id="status" name="status" class="user-info--status">
                                    <option value=""></option>
                                    <option value="замужем">в браке</option>
                                    <option value="в гражданском браке">в гражданском браке</option>
@@ -176,7 +176,7 @@
                             </p>
                             <p class="field__item">
                                <label for="edu" class="field-item__label">Образование</label>
-                               <select name="образование" id="edu" class="user-info--edu" required>
+                               <select name="education" id="edu" class="user-info--edu" required>
                                 <option></option>
                                 <option value="высшее" class="education__option">высшее</option>
                                 <option value="среднее специальное" class="education-option">среднее специальное</option>
@@ -189,7 +189,7 @@
                             <legend class="contact-info__title">Контактная информация</legend>
                             <p class="field__item">
                                <label for="phone" class="field-item__label">Моб. телефон</label>
-                               <input type="tel" id="phone" class="input-field input-field--phone" placeholder="+7" pattern="^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$" required>
+                               <input type="tel" id="phone" class="input-field input-field--phone" placeholder="+7" required>
                             </p>
                             <p class="field__item">
                                <label for="email" class="field-item__label">Электронная почта</label>
@@ -197,17 +197,19 @@
                             </p>
                         </fieldset>
                     </div>
-                   <fieldset class="confirmation__field">
-                        <legend class="visually-hidden">Подтверждение и отправка формы</legend>
-                        <p class="confirmation__item">
-                            <input id="agreement" type="checkbox" required checked>
-                            <label for="agreement" class="confirmation__content">Ставя эту галочку, я подтверждаю, что поставил
-                        её в трезвом уме и трезвой памяти</label>
-                        </p>
-                        <p class="confirmation__item">
-                            <button class="btn" type="submit">Полететь на Марс</button>
-                        </p>
-                    </fieldset>
+                    <div class="confirmation__field">
+                        <fieldset>
+                            <legend class="visually-hidden">Подтверждение и отправка формы</legend>
+                            <p class="confirmation__item">
+                                <input id="agreement" name="agreement" type="checkbox" required checked>
+                                <label for="agreement" class="confirmation__content">Ставя эту галочку, я подтверждаю, что поставил
+                            её в трезвом уме и трезвой памяти</label>
+                            </p>
+                            <p class="confirmation__item">
+                                <button class="btn" type="submit">Полететь на Марс</button>
+                            </p>
+                        </fieldset>
+                    </div>
                 </form>
             </section>
             <section class="fact">
@@ -215,6 +217,12 @@
                 <p class="fact__text">Эффективный диаметр жизненно вызывает случайный эффективный радиус, а время ожидания ответа составило бы 89 миллиардов лет.</p>
             </section>
         </main>
+        
     </div>
+    <div class="closing" id="thankyou_message">
+        <h2>Спасибо за заявку! Мы с вами свяжемся!</h2>
+    </div>
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 </body>
 </html>
